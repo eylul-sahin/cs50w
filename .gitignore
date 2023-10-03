@@ -9,3 +9,17 @@ lecture3/lecture3/__pycache__/__init__.cpython-311.pyc
 lecture3/lecture3/__pycache__/settings.cpython-311.pyc
 lecture3/lecture3/__pycache__/urls.cpython-311.pyc
 lecture3/lecture3/__pycache__/wsgi.cpython-311.pyc
+lecture3/newyear/__pycache__/__init__.cpython-311.pyc
+lecture3/newyear/__pycache__/admin.cpython-311.pyc
+lecture3/newyear/__pycache__/apps.cpython-311.pyc
+lecture3/newyear/__pycache__/models.cpython-311.pyc
+lecture3/newyear/__pycache__/urls.cpython-311.pyc
+lecture3/newyear/__pycache__/views.cpython-311.pyc
+lecture3/newyear/migrations/__pycache__/__init__.cpython-311.pyc
+lecture3/tasks/__pycache__/__init__.cpython-311.pyc
+lecture3/tasks/__pycache__/admin.cpython-311.pyc
+lecture3/tasks/__pycache__/apps.cpython-311.pyc
+lecture3/tasks/__pycache__/models.cpython-311.pyc
+lecture3/tasks/__pycache__/urls.cpython-311.pyc
+lecture3/tasks/__pycache__/views.cpython-311.pyc
+lecture3/tasks/migrations/__pycache__/__init__.cpython-311.pyc
