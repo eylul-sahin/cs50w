@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Google Search</title>
+        <style>
+            header{
+                padding: 10px;
+                text-align: right;
+            }
+            nav ul{
+                list-style-type: none;
+                padding: 0;
+                text-align: 0;
+            }
+            .search-container{
+                text-align: center;
+            }
+            .search-container input[type="text"],
+            .search-container button{
+                display: block;
+                margin: 0 auto;
+            }
+            .search-container input[type="text"]{
+                margin-bottom: 10px;
+                border-radius: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="https://images.google.com/">Google Image Search</a></li>
+                    <li><a href="https://www.google.com/advanced_search">Google Advanced Search</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Type your query...">
+                <button id="search-button">Google Search</button>
+                <a href="https://www.google.com/search">I'm Feeling Lucky</a>
+            </div>
+        </main>
+        <script>
+            document.getElementById("search-button").addEventListener("click", function() {
+                let query = document.getElementById("search-input").value;
+                if(query) {
+                    window.location.href = "https://www.google.com/search?q=" + encodeURIComponent(query); 
+                }
+            })
+        </script>
+    </body>
+</html>

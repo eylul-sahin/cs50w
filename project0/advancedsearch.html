@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Google Advanced Search</title>
+        <style>
+            nav ul{
+                list-style-type: none;
+                text-align: right;
+            }
+            .search-container{
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            .search-container label{
+                display: inline-block;
+                width: 200px;
+                text-align: right;
+            }
+
+            .search-container input[type="text"]{
+                flex: 1;
+                margin-left: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                padding: 5px 50px;
+                margin-left: 10px;
+            }
+
+            button {
+                padding: 10px;
+                margin-left: 800px;
+                color: white;
+                background-color: rgb(39, 132, 207);
+            }
+        </style>
+    </head>>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="https://images.google.com/">Google Image Search</a></li>
+                <li><a href="https://www.google.com/search">Google Search</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="search-container">
+                <label for="search">Containing all of these words:</label>
+                <input type="text" id="search-1" name="search-1">
+            </div>
+            <div class="search-container">
+                <label for="search">Exactly containing the following word or words:</label>
+                <input type="text" id="search-2" name="search-2">
+            </div>
+            <div class="search-container">
+                <label for="search">Containing any of these words:</label>
+                <input type="text" id="search-3" name="search-3">
+            </div>
+            <div class="search-container">
+                <label for="search">Does not contain any of these words:</label>
+                <input type="text" id="search-4" name="search-4">
+            </div>
+            <div class="search-container">
+                <button id="advanced-search-button">Advanced Search</button>
+                <a href="https://www.google.com/advanced_search"></a>
+            </div>
+            <script>
+               document.getElementById("advanced-search-button").onclick = function() {
+                    const search1 = document.getElementById("search-1").value;
+                    const search2 = document.getElementById("search-2").value;
+                    const search3 = document.getElementById("search-3").value;
+                    const search4 = document.getElementById("search-4").value;
+
+                    let query = '';
+
+                    if(search1) {
+                        query += ' "' + search1 + '"';
+                    }
+                    if(search2) {
+                        query += ' "' + search2 + '"';
+                    }
+                    if(search3) {
+                        query += ' "' + search3 + '"';
+                    }
+                    if(search4) {
+                        query += ' "' + search4 + '"';
+                    }
+
+                    window.location.href = "https://www.google.com/search?q=" + encodeURIComponent(query);
+               };
+            </script>
+        </main>
+    </body>
+</html>

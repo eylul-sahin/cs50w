@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Google Image Search</title>
+        <style> 
+        header {
+            text-align: right;
+        }
+        nav ul {
+            list-style-type: none;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="https://www.google.com/search">Google Search</a></li>
+                    <li><a href="https://www.google.com/advanced_search">Google Advanced Search</a></li>
+                </ul>
+            </nav>
+        </header>
+            <main>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Type your query...">
+                    <button id="search-button">Google Image Search</button>
+                </div>
+            </main>
+            <script>
+                document.getElementById("search-button").addEventListener("click", function() {
+                    let query = document.getElementById("search-input").value;
+                    if(query) {
+                        window.location.href = "https://www.google.com/search?tbm=isch&q=" + encodeURIComponent(query);
+                    }
+                })
+            </script>
+        
+    </body>
+</html>
